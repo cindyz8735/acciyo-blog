@@ -1,11 +1,11 @@
 themes = {
-    post-jekyll: #B31917,
-    post-css: #2DA0C3,
-    post-js: #D6BA32,
-    post-html: #EB7728,
-    post-svg: #7D669E,
-    post-dev: #637a91,
-    post-misc: #7AAB13
+    post-jekyll: #27BAA4,
+    post-css: #27BAA4,
+    post-js: #27BAA4,
+    post-html: #27BAA4,
+    post-svg: #27BAA4,
+    post-dev: #27BAA4,
+    post-misc: #27BAA4
 }
 
 for theme, category-color in themes
@@ -17,7 +17,6 @@ for theme, category-color in themes
                 color category-color
             a
                 color category-color
-                border-bottom 2px dashed category-color
                 &:hover
                     background-color category-color
                     color #fff
@@ -33,11 +32,9 @@ for theme, category-color in themes
         .header-post,
         .header-site
             background-color category-color
-            h1
-                text-shadow 3px 3px darken(category-color, 20%)
         .bar-header
             .logo a
-                color category-color
+                color #27BAA4
         .author .email,
         .author .github
             color category-color
@@ -56,7 +53,7 @@ for theme, category-color in themes
             
         .box-body
             h2
-                color category-color
+                color #191919
             .tags a
                 color category-color
                 border 1px solid category-color
@@ -67,13 +64,4 @@ for theme, category-color in themes
             background-color category-color
             nav li a:hover
                 color category-color
-        .ribbon span
-            background-color category-color
-            &:before
-                border-left 3px solid darken(category-color, 30%)
-                border-top 3px solid darken(category-color, 30%)
-            &:after
-                border-right 3px solid darken(category-color, 30%)
-                border-top 3px solid darken(category-color, 30%)
-        footer
-            background-color category-color
+

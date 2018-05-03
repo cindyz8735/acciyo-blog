@@ -9,12 +9,7 @@
             <article role="article" id="post" class="post-content" itemprop="articleBody">
                 {{ content }}
             </article>
-
             {% include share.html %}
-            {% include author.html %}
-            {% if page.comments != false %} 
-                {% include comments.html %}
-            {% endif %}
             {% include footer.html %}
         </section>
     </body>

@@ -5,6 +5,7 @@ main
     center(rem(1030px))
     
 .flex-grid
+    padding-top rem(35px)
     display flex
     flex-flow row wrap
 
@@ -51,54 +52,13 @@ main
             font-size rem(14px)
             line-height rem(22px)
         .tags a
-            color main
+            color lightGray
             padding rem(5px) rem(10px)
-            border-radius 3px
+            border-radius 1px
             display inline-block
             margin 0 0 rem(5px)
             z-index 50
+            font-size rem(12px)
 
 .ribbon
-    position absolute
-    right -5px 
-    top -5px
-    z-index 1
-    overflow hidden
-    width 75px 
-    height 75px
-    text-align right
-    span 
-        font-size rem(12px)
-        font-weight bold
-        color #FFF
-        text-transform uppercase
-        text-align center
-        line-height 20px
-        transform rotate(45deg)
-        -webkit-transform rotate(45deg)
-        width 100px
-        display block
-        background #B31917
-        position absolute
-        top 19px 
-        right: -21px
-        &:before
-            content ""
-            position absolute
-            left 0px
-            top 100%
-            z-index -1
-            border-left 3px solid main
-            border-right 3px solid transparent
-            border-bottom 3px solid transparent
-            border-top 3px solid main
-        &:after 
-            content ""
-            position absolute 
-            right 0px 
-            top 100%
-            z-index -1
-            border-left 3px solid transparent
-            border-right 3px solid main
-            border-bottom 3px solid transparent
-            border-top 3px solid main
+    display none
