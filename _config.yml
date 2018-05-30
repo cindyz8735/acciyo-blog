@@ -1,8 +1,8 @@
 # Site settings
 title: acciyo
 description: Blog for acciyo.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+baseurl: "/acciyo" # the subpath of your site, e.g. /blog
+url: "https://cindyz8735.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: acciyo
@@ -29,12 +29,8 @@ compress_html:
 links:
   - title: Home
     url: /
-  - title: Series
-    url: /series
   - title: Tags
     url: /tags
-  - title: About Me
-    url: /about
 
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules', 'gulpfile.js']
+exclude: ['package.json', 'node_modules', 'gulpfile.js']
