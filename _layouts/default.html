@@ -4,41 +4,36 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
-    {% include head.html %}
+  {% include head.html %}
+  <body>
+  	{% include header-default.html %}
     {% include svg-icons.html %}
-    <body>
-        {% include header-default.html %}
-        <div class="sticky-container">
-		    <ul class="sticky">
-		        <li>
-		            <img src="images/facebook-circle.png" width="32" height="32">
-		            <p><a href="https://www.facebook.com/codexworld" target="_blank">Like Us on<br>Facebook</a></p>
-		        </li>
-		        <li>
-		            <img src="images/twitter-circle.png" width="32" height="32">
-		            <p><a href="https://twitter.com/codexworldblog" target="_blank">Follow Us on<br>Twitter</a></p>
-		        </li>
-		        <li>
-		            <img src="images/gplus-circle.png" width="32" height="32">
-		            <p><a href="https://plus.google.com/codexworld" target="_blank">Follow Us on<br>Google+</a></p>
-		        </li>
-		        <li>
-		            <img src="images/linkedin-circle.png" width="32" height="32">
-		            <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Follow Us on<br>LinkedIn</a></p>
-		        </li>
-		        <li>
-		            <img src="images/youtube-circle.png" width="32" height="32">
-		            <p><a href="http://www.youtube.com/codexworld" target="_blank">Subscribe on<br>YouYube</a></p>
-		        </li>
-		        <li>
-		            <img src="images/pin-circle.png" width="32" height="32">
-		            <p><a href="https://www.pinterest.com/codexworld" target="_blank">Follow Us on<br>Pinterest</a></p>
-		        </li>
-		    </ul>
-		</div>
-            <section class="content">
-                {{ content }}
-            </section>
-        {% include footer.html %}
-    </body>
+    <div class="sticky-container">
+        <ul class="sticky">
+            <li id = "sticky-fb">
+                <a aria-label="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+            <li id = "sticky-twitter">
+                <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ site.baseurl }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li id = "sticky-linkedin">
+                <a aria-label="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li id = "sticky-email">
+                <a aria-label="Share via Email" href="mailto:?body="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="content">
+        {{ content }}
+    </section>
+  	{% include footer.html %}
+  </body>
 </html>
