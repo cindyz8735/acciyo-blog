@@ -1,7 +1,7 @@
 # Site settings
 title: acciyo
 description: Blog for acciyo.
-baseurl: "/acciyo" # the subpath of your site, e.g. /blog
+baseurl: "/acciyo-blog" # the subpath of your site, e.g. /blog
 url: "https://cindyz8735.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
