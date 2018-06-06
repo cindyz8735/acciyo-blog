@@ -5,6 +5,7 @@
         {% include header-post.html %}
         {% include svg-icons.html %}
         <div class="sticky-container">
+            <p>Share:</p>
             <ul class="sticky">
                 <li id = "sticky-fb">
                     <a aria-label="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}">
@@ -21,7 +22,7 @@
                     </a>
                 </li>
                 <li id = "sticky-email">
-                    <a aria-label="Share via Email" href="mailto:?body="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+                    <a aria-label="Share via Email" href="mailto:?body={{ site.url }}{{ site.baseurl }}{{ page.url }}">
                         <i class="fas fa-envelope" aria-hidden="true"></i>
                     </a>
                 </li>
@@ -32,7 +33,6 @@
             <article role="article" id="post" class="post-content" itemprop="articleBody">
                 {{ content }}
             </article>
-            {% include share.html %}
             {% include footer.html %}
         </section>
     </body>

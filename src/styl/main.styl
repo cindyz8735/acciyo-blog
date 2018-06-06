@@ -41,14 +41,14 @@ normalize()
     margin 0px
     position fixed
     left -40px
-    top 50%
-    width 80px 
-    z-index 1100
+    top 375px
+    z-index 8
 
 .sticky li
     list-style-type none
     color #fff
     height 43px
+    width 43px
     padding 0px 
     margin 0px
     text-align center
@@ -79,3 +79,33 @@ normalize()
 
 .sticky .svg-inline--fa
   vertical-align -.4em
+
+.sticky-container p
+    font-size 1em
+    font-weight 300
+    color black
+    text-align left
+    margin-left 40px
+
+.sticky-home
+    top 275px
+
+#blog-title
+    position relative
+    top 100px
+    text-align center
+
+@media screen and (max-width: 992px)
+    .sticky-container
+        padding 0px
+        position relative
+        top 375px
+        display inline-block
+        z-index -10
+        margin-left 20px
+    .sticky-container li
+        float left
+    .post
+        top 25rem
+
+
