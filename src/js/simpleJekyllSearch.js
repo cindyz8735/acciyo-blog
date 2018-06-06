@@ -1,13 +1,13 @@
 (function($) {
     $.fn.simpleJekyllSearch = function(options) {
         var settings = $.extend({
-            jsonFile        : '/acciyo/search.json',
+            jsonFile        : 'search.json',
             jsonFormat      : 'title,tags,categories,url,date',
             template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{date}</time></span></a></article></li>',
             searchResults   : '.search-results',
             searchResultsTitle   : '<h4>Search results:</h4>',
             limit           : '10',
-            noResults       : '<p>Oh snap!<br/><small>We found nothing :(</small></p>'
+            noResults       : '<p>Sorry, we could not find anything!<br/><small>Please try again.</small></p>'
         }, options);
 
         var properties = settings.jsonFormat.split(',');
